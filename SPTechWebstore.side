@@ -1,0 +1,450 @@
+{
+  "id": "0edec2a6-e57d-420f-8cbd-c628802e34dd",
+  "version": "2.0",
+  "name": "SPTechWebstore",
+  "url": "http://test.sptech.pl",
+  "tests": [{
+    "id": "4b32ea04-6e86-4c38-8655-158ee9c6c82a",
+    "name": "Navigation through the offer",
+    "commands": [{
+      "id": "3d7eca3e-b436-47d4-bad1-e53e11fa7a87",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29aa2f2a-77ea-492c-a987-14d2deb457cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x794",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1576e925-7a90-44d3-b4a6-67a3d05541db",
+      "comment": "",
+      "command": "click",
+      "target": "css=#category-3 > .dropdown-item",
+      "targets": [
+        ["css=#category-3 > .dropdown-item", "css:finder"],
+        ["xpath=//li[@id='category-3']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/3-clothes']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c153140-9ca4-4be5-955c-02664edcf927",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "CLOTHES"
+    }, {
+      "id": "46085f3d-05ba-4be0-829e-3068d7b660a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Men",
+      "targets": [
+        ["linkText=Men", "linkText"],
+        ["css=.category-sub-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Men')])[2]", "xpath:link"],
+        ["xpath=//div[@id='left-column']/div/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://test.sptech.pl/4-men'])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d09bcb7-5db4-4e97-a63a-b017ba6cf4a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "MEN"
+    }, {
+      "id": "11eeda99-aca7-4d45-9656-679a277173c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#category-3 > .dropdown-item",
+      "targets": [
+        ["css=#category-3 > .dropdown-item", "css:finder"],
+        ["xpath=//li[@id='category-3']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/3-clothes']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa5f3d49-bb35-4ccb-8bc1-871661b00898",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "CLOTHES"
+    }, {
+      "id": "ecb4dd71-ca7a-4b99-a0ea-e2dffb30bc3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Women",
+      "targets": [
+        ["linkText=Women", "linkText"],
+        ["css=.category-sub-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Women')])[2]", "xpath:link"],
+        ["xpath=//div[@id='left-column']/div/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://test.sptech.pl/5-women'])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2ba456-c6b5-4009-a5f9-3799447d9633",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "WOMEN"
+    }, {
+      "id": "acece747-7913-424c-92a5-73372e3d209f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#category-6 > .dropdown-item",
+      "targets": [
+        ["css=#category-6 > .dropdown-item", "css:finder"],
+        ["xpath=//li[@id='category-6']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/6-accessories']", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f9ebe8f-30e3-421c-acd6-4528249d84cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "PRODUKTY POWIĄZANE"
+    }, {
+      "id": "0f1093dc-dd24-4e04-86b5-5884b5a19fad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Stationery",
+      "targets": [
+        ["linkText=Stationery", "linkText"],
+        ["css=.category-sub-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Stationery')])[2]", "xpath:link"],
+        ["xpath=//div[@id='left-column']/div/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://test.sptech.pl/7-stationery'])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf538524-aa16-4c30-8eb5-d3f4c6a42343",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "STATIONERY"
+    }, {
+      "id": "69b32950-7b3d-4b32-ba4d-693a7bf16a62",
+      "comment": "",
+      "command": "click",
+      "target": "css=#category-6 > .dropdown-item",
+      "targets": [
+        ["css=#category-6 > .dropdown-item", "css:finder"],
+        ["xpath=//li[@id='category-6']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/6-accessories']", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9f447d-1db7-447f-a91f-620e35b56cc4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "PRODUKTY POWIĄZANE"
+    }, {
+      "id": "9f28c30f-502c-4af5-80ab-950b7aa887bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home Accessories",
+      "targets": [
+        ["linkText=Home Accessories", "linkText"],
+        ["css=.category-sub-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home Accessories')])[2]", "xpath:link"],
+        ["xpath=//div[@id='left-column']/div/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://test.sptech.pl/8-home-accessories'])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd1f8cc-b0e3-49b0-9460-dfedcfe545a0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "HOME ACCESSORIES"
+    }, {
+      "id": "851f7466-3a3d-4828-bb5e-26e293077aaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#category-9 > .dropdown-item",
+      "targets": [
+        ["css=#category-9 > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Art')]", "xpath:link"],
+        ["xpath=//li[@id='category-9']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/9-art']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d733037-cbe6-40e7-b899-36cfd4d4d51d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/div/div/h1",
+      "targets": [],
+      "value": "ART"
+    }, {
+      "id": "7aa1c622-4a82-4d1e-b918-45e901145c5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kontakt z nami",
+      "targets": [
+        ["linkText=Kontakt z nami", "linkText"],
+        ["css=#contact-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Kontakt z nami')]", "xpath:link"],
+        ["xpath=//div[@id='contact-link']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/kontakt']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kontakt z nami')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6fa5d63-3e17-4532-9b54-86a309565885",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div[2]/section/section/section/form/section/div[1]/div/h3",
+      "targets": [],
+      "value": "KONTAKT Z NAMI"
+    }, {
+      "id": "67ecda81-f41d-4460-9743-51ce67973f93",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e7a56017-aecd-46fa-8dcd-47f379fd418f",
+    "name": "UserLogin",
+    "commands": [{
+      "id": "b42769e4-957d-403f-ba57-70f8ef6b7704",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eed2ca7-2f3f-4d11-aca9-7861fe695086",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x794",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a33dda45-257f-4583-8ea7-a2eba95f78d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .hidden-sm-down",
+      "targets": [
+        ["css=a > .hidden-sm-down", "css:finder"],
+        ["xpath=//div[@id='_desktop_user_info']/div/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa4333e5-e0b5-4d4b-b0c0-5cd8ee33a90c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div/section/header/h1",
+      "targets": [],
+      "value": "Zaloguj się do swojego konta"
+    }, {
+      "id": "a7aa841a-ea0c-4968-9c58-ac054277bc2c",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.col-md-6 > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/section/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfbb572f-948f-4e3c-9851-78f4b71cd298",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.col-md-6 > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/section/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "korzeniec.rafal90@cyberia.pl"
+    }, {
+      "id": "22f7d511-c1f5-4cff-a6c3-07896a17a480",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.js-child-focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/section/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff27837-ad68-4696-9799-fc1e9f898582",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.js-child-focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/section/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1234qwer"
+    }, {
+      "id": "c5df8601-f9d8-49ab-8bbe-6579fc9a2cc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-login",
+      "targets": [
+        ["id=submit-login", "id"],
+        ["css=#submit-login", "css:finder"],
+        ["xpath=//button[@id='submit-login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9028a864-ff03-4361-a042-bdd7b32140dc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div/section/header/h1",
+      "targets": [],
+      "value": "Twoje konto"
+    }, {
+      "id": "84397eca-e133-4ebc-9647-07f4ff95fdaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logout",
+      "targets": [
+        ["css=.logout", "css:finder"],
+        ["xpath=//div[@id='_desktop_user_info']/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://test.sptech.pl/?mylogout=']", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb10bdf0-88d5-4516-a3ba-51748cde821e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div/section/header/h1",
+      "targets": [],
+      "value": "Zaloguj się do swojego konta"
+    }, {
+      "id": "1365178e-2311-4f68-848c-5f044c43024d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9d457ea9-f2fb-43d1-bced-3638a3ccc4cf",
+    "name": "Search field",
+    "commands": [{
+      "id": "993a0af6-6e55-4cf4-bb0c-8a73b9197f85",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c076b30-d85e-47f2-a6c9-59b1df79a61a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x794",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53c2bdb0-407a-44e2-a81d-f6acc4c83a63",
+      "comment": "",
+      "command": "click",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.ui-autocomplete-input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='search_widget']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc312ad7-a610-4364-bfca-08b10f6f5f76",
+      "comment": "",
+      "command": "type",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.ui-autocomplete-input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='search_widget']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sweater"
+    }, {
+      "id": "d9d979b6-4a1e-4b23-9f88-56e3242c0cae",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.ui-autocomplete-input", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='search_widget']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ace4c57e-22c4-444d-a803-6a67d043eae5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/section/div/div/section/h2",
+      "targets": [],
+      "value": "WYNIKI WYSZUKIWANIA"
+    }, {
+      "id": "5823beb0-bb64-4da6-b7cb-eea2e70dd465",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0e2696ac-8f7e-4c6d-8ed9-133fff8c58c3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b32ea04-6e86-4c38-8655-158ee9c6c82a"]
+  }],
+  "urls": ["http://test.sptech.pl/"],
+  "plugins": []
+}

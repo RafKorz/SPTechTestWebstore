@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1</id>
+				<title>Register account on store - terms of the website is unchecked</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał%%11&quot;
+5. Entering last name in the field &quot;Korzeniec@@!!11&quot;
+6. Entering e-mail in the field &quot;korzeniec.rafal90@cyberia.pl&quot;
+7. Setting the password
+8. Date of birth not entered
+9. Acceptance of the terms of the website is unchecked
+10. Registration confirmation </steps>
+										<expected>Message about the need to mark the acceptance of the terms of the website.
+
+Actual result: Message about the need to mark the acceptance of the terms of the website
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C2</id>
+				<title>Register account on store - name and last name with critical signs and numbers</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał%%11&quot;
+5. Entering last name in the field &quot;Korzeniec@@!!11&quot;
+6. Entering e-mail in the field &quot;korzeniec.rafal90@cyberia.pl&quot;
+7. Setting the password
+8. Date of birth not entered
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>Message about invalid characters in data fields.
+
+Actual result: Message about invalid characters in data fields (numbers and critical signs).
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C3</id>
+				<title>Register account on store - without date of birth</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał&quot;
+5. Entering last name in the field &quot;Korzeniec&quot;
+6. Entering e-mail in the field &quot;korzeniec.rafal90@cyberia.pl&quot;
+7. Setting the password
+8. Date of birth not entered
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>A message that you must enter your date of birth.
+
+Actual result: creating of account.
+
+Status: failed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C4</id>
+				<title>Registration with existing e-mail adress</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał&quot;
+5. Entering last name in the field &quot;Korzeniec&quot;
+6. Entering e-mail in the field &quot;korzeniec.rafal90@cyberia.pl&quot;
+7. Setting the password
+8. Date of birth entered
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>Massage about existing e-mail adress - creating account is impossible.
+
+Actual result: Massage about existing e-mail adress - creating account is impossible.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C5</id>
+				<title>Register account without e-mail adress</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał&quot;
+5. Entering last name in the field &quot;Korzeniecki&quot;
+6. E-mail field left blank
+7. Setting the password
+8. Date of birth not entered
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>Information that an e-mail is needed.
+
+Actual result: Information that an e-mail is needed.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C6</id>
+				<title>Register account of user.</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Entering name in the field &quot;Rafał&quot;
+5. Entering last name in the field &quot;Korzeniec&quot;
+6. Entering e-mail in the field &quot;rafi52@o2.pl&quot;
+7. Setting the password
+8. Setting the date of birth
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>Creating account of user.
+
+Actual result: Creating account of user.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C7</id>
+				<title>Register account of user without name and last name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Clicking on the option to create an account
+4. Name field left blank
+5. Last name field left blank
+6. Entering e-mail in the field &quot;rafi52@o2.pl&quot;
+7. Setting the password
+8. Setting the date of birth
+9. Acceptance of the terms of the website is checked
+10. Registration confirmation </steps>
+										<expected>Information that the name and surname fields should contain data.
+
+Actual result: Information that the name and surname fields should contain data.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C8</id>
+				<title>User login.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. In the e-mail field, enter correct e-mail
+4. In the password field, enter correct password
+5. Confirm user login</steps>
+										<expected>Correct user login.
+
+Actual result: Correct user login.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C9</id>
+				<title>User login with incorrect e-mail (don&apos;t existing e-mail).</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering login option
+3. In the field of e-mail, enter incorrect(don&apos;t existing) e-mail
+4. In the field of password, enter password
+5. Confirm user login.</steps>
+										<expected>Massage: authentication failure
+
+Actual result: massage - authentication failure
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C10</id>
+				<title>User login with incorrect password.</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Enter the site
+2. Enter login option
+3. In the field of e-mail enter correct e-mail
+4. In the field of password, enter incorrect password
+5. Confirm user login</steps>
+										<expected>Massage: authentication failure
+
+Actual result: massage - authentication failure
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C11</id>
+				<title>User login without e-mail and password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering the login option
+3. Field of e-mail and field of password left blank
+4. Confirm user login</steps>
+										<expected>Massage: authentication failure
+
+Actual result: massage - authentication failure
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C12</id>
+				<title>Register account of user via buying product with adding to cart and buying</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site</content><expected>Expected result: Entering the site
+
+Actual result: Entering the site</expected></step>
+<step>
+<index>2</index><content>Selecting a product</content><expected>Expected result: Go to the product
+
+Actual result: Go to the product</expected></step>
+<step>
+<index>3</index><content>Adding to cart</content><expected>Expected result: confirmation of adding to cart
+
+Actual result: confirmation of adding to cart</expected></step>
+<step>
+<index>4</index><content>Click realisation of buying</content><expected>Expected result: Go to cart
+
+Actual result: Go to cart</expected></step>
+<step>
+<index>5</index><content>Setting the quantity of products</content><expected>Expected result: Setting the amount works, the purchase price adjusts
+
+Actual result: Setting the amount works, the purchase price adjusts</expected></step>
+<step>
+<index>6</index><content>Click realisation of buying</content><expected>Expected result: Go to the registration panel
+
+Actual result: Go to the registration panel</expected></step>
+<step>
+<index>7</index><content>Enter the name in the name field</content><expected>Expected result: Name entered
+
+Actual result: Name entered</expected></step>
+<step>
+<index>8</index><content>Enter the last name in the last name field</content><expected>Expected result: Last name entered 
+
+Actual result: Last name entered</expected></step>
+<step>
+<index>9</index><content>Enter the e-mail in the e-mail field</content><expected>Expected result: E-mail entered
+
+Actual result: E-mail entered</expected></step>
+<step>
+<index>10</index><content>Setting the password</content><expected>Expected result: Pasword set
+
+Actual result: Pasword set</expected></step>
+<step>
+<index>11</index><content>Acceptance of the terms of the website is checked</content><expected>Expected result: Acceptance of the terms of the website is checked
+
+Actual result:  Acceptance of the terms of the website is checked</expected></step>
+<step>
+<index>12</index><content>Click next</content><expected>Expected result: Go to adress panel
+
+Actual result: Go to adress panel</expected></step>
+<step>
+<index>13</index><content>Entering informations in the adress panel: post code, city, street</content><expected>Expected result: Informations entered
+
+Actual result: Informations entered</expected></step>
+<step>
+<index>14</index><content>Click next</content><expected>Expected result: go to delivery panel
+
+Actual result: delivery panel</expected></step>
+<step>
+<index>15</index><content>Choose a delivery method</content><expected>Expected result: choosing a delivery method
+
+Actual result: choosing a delivery method</expected></step>
+<step>
+<index>16</index><content>Click next</content><expected>Expected result: go to payment panel
+
+Actual result: go to payment panel</expected></step>
+<step>
+<index>17</index><content>Choose a payment method</content><expected>Expected result: choosing payment method
+
+Actual result: choosing payment method</expected></step>
+<step>
+<index>18</index><content>Confirmation of buy</content><expected>Expected result: go to buying summary
+
+Actual result: go to buying summary
+
+Status: passed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C13</id>
+				<title>Subscription field</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate>60</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Inserting an e-mail address in the subscription field
+3. Klick on subscription button
+</steps>
+										<expected>Massage on e-mail box about confirmation subscription
+
+Actual result: No subscription messages on e-mail box
+
+Status: failed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C14</id>
+				<title>Navigation through the offer.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site</content><expected>Entering the site</expected></step>
+<step>
+<index>2</index><content>Choosing &quot;Clothes&quot;</content><expected>Go to &quot;Clothes&quot;</expected></step>
+<step>
+<index>3</index><content>Choosing the &quot;Men&quot;</content><expected>Go to &quot;Men&quot;</expected></step>
+<step>
+<index>4</index><content>Choosing on &quot;Clothes&quot;</content><expected>Returning to &quot;Clothes&quot;</expected></step>
+<step>
+<index>5</index><content>Choosing &quot;Women&quot;</content><expected>Go to &quot;Women&quot;</expected></step>
+<step>
+<index>6</index><content>Choosing &quot;Related Products&quot;</content><expected>Go to &quot;Relates Products&quot;</expected></step>
+<step>
+<index>7</index><content>Choosing &quot;Stationery&quot;</content><expected>Go to &quot;Stationery&quot;</expected></step>
+<step>
+<index>8</index><content>Choosing &quot;Related Products&quot;</content><expected>Returning to &quot;Related products&quot;</expected></step>
+<step>
+<index>9</index><content>Choosing &quot;Home accesories&quot;</content><expected>Go to &quot;Home accessories&quot;</expected></step>
+<step>
+<index>10</index><content>Choosing &quot;Art&quot;</content><expected>Go to &quot;Art&quot;
+
+The &quot;Art&quot; tab doesn&apos;t work in the browser Mozilla Firefox</expected></step>
+<step>
+<index>11</index><content>Choosing &quot;Contact us&quot;
+
+</content><expected>Go to contact panel
+
+Status: failed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C15</id>
+				<title>Product filters &quot;Clothes&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Choosing the &quot;Clothes&quot;
+3. Selecting size &quot;S&quot;
+4. Unchecking size &quot;S&quot;
+5. Selecting size &quot;M&quot;
+6. Unchecking size &quot;M&quot;
+7. Selecting size &quot;L&quot;
+8. Unchecking size &quot;L&quot;
+9. Selecting size &quot;XL&quot;
+10. Unchecking size &quot;XL&quot;
+11. Selecting all sizes
+12. Selecting white color
+13. Unchecking white color
+14. Selecting black color
+15. Inchecking black color
+15. Selecting white and black color
+16. Selecting long sleeves
+17. Unchecking long sleeves
+18. Selecting short sleeves
+19. Unchecking short sleeves
+20. Selecting long and short sleeves
+21. Moving the price slider 
+22. Selecting Men
+23. Unchecking Men
+24. Selecting Women
+25. Unchecking Women
+26. Selecting Men and Women
+</steps>
+										<expected>Correct working of filtres
+
+Actual result: uncorrect working of filtres - When we choose black, the product is still white and you need to change the color preview only after hovering over the product. Other filters work fine.
+
+Status: failed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C16</id>
+				<title>Product filtres &quot;related products&quot;.</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site</content><expected>Entering the site</expected></step>
+<step>
+<index>2</index><content>Entering &quot;related products&quot;</content><expected>Entering &quot;related products&quot;</expected></step>
+<step>
+<index>3</index><content>Selecting &quot;Home Accessories&quot;</content><expected>Display &quot;Home Accessories&quot; items</expected></step>
+<step>
+<index>4</index><content>Unchecking &quot;Home Accesories&quot;</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>5</index><content>Selecting &quot;Stationery&quot;</content><expected>Display &quot;Stationery&quot; items</expected></step>
+<step>
+<index>6</index><content>Unchecking &quot;Stationery&quot;</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>7</index><content>Selecting white color</content><expected>Display white items</expected></step>
+<step>
+<index>8</index><content>Selecting black color</content><expected>Display black items
+
+Actual result: display white items - if you want to view a black item you have to hover over the item and click on the black color on it</expected></step>
+<step>
+<index>9</index><content>Selecting ceramic composition</content><expected>Display ceramic composition items</expected></step>
+<step>
+<index>10</index><content>Unchecking ceramic composition</content><expected>Back to the overview of relates products</expected></step>
+<step>
+<index>11</index><content>Selecting poliester composition</content><expected>Display poliester composition items</expected></step>
+<step>
+<index>12</index><content>Unchecking poliester composition</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>13</index><content>Selecting recycled cardboard compocition</content><expected>Display recycled cardboard items</expected></step>
+<step>
+<index>14</index><content>Unchecking recycled cardboard</content><expected>Back to the overview  of related products</expected></step>
+<step>
+<index>15</index><content>Selecting 120 pages property</content><expected>Display 120 pages items (notebooks)</expected></step>
+<step>
+<index>16</index><content>Unchecking 120 pages property</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>17</index><content>Selecting Removalbe cover property</content><expected>Display removable cover property</expected></step>
+<step>
+<index>18</index><content>Unchecking removable cover property</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>19</index><content>Selecting Graphic Corner </content><expected>Display graphic corner products</expected></step>
+<step>
+<index>20</index><content>Unchecking Graphic Corner</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>21</index><content>Selecting Studio Design</content><expected>Display Studio Design products</expected></step>
+<step>
+<index>22</index><content>Unchecking Studio Design</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>23</index><content>Check the price slider</content><expected>The price slider working correct</expected></step>
+<step>
+<index>24</index><content>Selecting Ruled paper type</content><expected>Display ruled paper type</expected></step>
+<step>
+<index>25</index><content>Unchecking ruled paper type</content><expected>Back to the overview of related products</expected></step>
+<step>
+<index>26</index><content>Selecting plain paper type</content><expected>Display plain paper type</expected></step>
+<step>
+<index>27</index><content>Unchecking plain paper type</content><expected>Back to the overview related products</expected></step>
+<step>
+<index>28</index><content>Selected squarred paper type</content><expected>Display squarred paper type</expected></step>
+<step>
+<index>29</index><content>Unchecking squarred paper type</content><expected>Back to the overview related products</expected></step>
+<step>
+<index>30</index><content>Selecting doted paper type</content><expected>Display doted paper type
+
+Status: failed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C17</id>
+				<title>Product filtres &quot;Art&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site</content><expected>Entering the site</expected></step>
+<step>
+<index>2</index><content>Entering &quot;Art&quot;</content><expected>Go to &quot;Art&quot;</expected></step>
+<step>
+<index>3</index><content>Selecting composition - Matt paper</content><expected>Display matt paper items</expected></step>
+<step>
+<index>4</index><content>Unchecking matt paper</content><expected>Back to the overview of art products</expected></step>
+<step>
+<index>5</index><content>Selecting Graphic Corner</content><expected>Display Graphic Corner items</expected></step>
+<step>
+<index>6</index><content>Check price slider</content><expected>Price slider working correct</expected></step>
+<step>
+<index>7</index><content>Selecting demensions</content><expected>Displaying items that meet the size requirements.
+
+Status: passed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C18</id>
+				<title>Searching field</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. Entering the site
+2. Entering &quot;sweater&quot; in the search field
+3. Confirming </steps>
+										<expected>Finding the right product
+
+Actual result: Finding the right product</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C19</id>
+				<title>Sorting in clothes</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site</content><expected>Entering the site</expected></step>
+<step>
+<index>2</index><content>Entering &quot;Clothes&quot;</content><expected>Go to &quot;Clothes&quot;</expected></step>
+<step>
+<index>3</index><content>Clicking available option in sorting field</content><expected>Display available items</expected></step>
+<step>
+<index>4</index><content>Clicking name from A to Z in sorting option</content><expected>Display items from A to Z</expected></step>
+<step>
+<index>5</index><content>Clicking name from Z to A in sorting option</content><expected>Display items from Z to A</expected></step>
+<step>
+<index>6</index><content>Clicking increasing price in sorting option</content><expected>Display items by increasing price</expected></step>
+<step>
+<index>7</index><content>Clicking decreasing price in sorting option</content><expected>Display items by decreasing price
+
+Status: passed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C20</id>
+				<title>Sorting in related products</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site
+</content><expected>Entering the site
+</expected></step>
+<step>
+<index>2</index><content>Entering &quot;related products&quot;
+</content><expected>Go to &quot;related products&quot;
+</expected></step>
+<step>
+<index>3</index><content>Clicking available option in sorting field
+</content><expected>Display available items
+</expected></step>
+<step>
+<index>4</index><content>Clicking name from A to Z in sorting option
+</content><expected>Display items from A to Z
+</expected></step>
+<step>
+<index>5</index><content>Clicking name from Z to A in sorting option
+</content><expected>Display items from Z to A
+</expected></step>
+<step>
+<index>6</index><content>Clicking increasing price in sorting option
+</content><expected>Display items by increasing price
+</expected></step>
+<step>
+<index>7</index><content>Clicking decreasing price in sorting option
+</content><expected>Display items by decreasing price
+
+Status: passed
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C21</id>
+				<title>Sorting in art</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering the site
+</content><expected>Entering the site
+</expected></step>
+<step>
+<index>2</index><content>Entering &quot;Art&quot;</content><expected>Go to &quot;Art&quot;</expected></step>
+<step>
+<index>3</index><content>Clicking available option in sorting field
+</content><expected>Display available items
+</expected></step>
+<step>
+<index>4</index><content>Clicking name from A to Z in sorting option
+</content><expected>Display items from A to Z
+</expected></step>
+<step>
+<index>5</index><content>Clicking name from Z to A in sorting option
+</content><expected>Display items from Z to A
+</expected></step>
+<step>
+<index>6</index><content>Clicking increasing price in sorting option
+</content><expected>Display items by increasing price</expected></step>
+<step>
+<index>7</index><content>Clicking decreasing price in sorting option
+</content><expected>Display items by decreasing price
+
+Status: passed
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C22</id>
+				<title>Adding to cart after user login</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps>1. Entering the site
+2. Login of user
+3. Entering &quot;Art&quot;
+4. Choosing product - Brown Bear - vector Graphics
+5. Adding to cart
+6. Clocking on continue buying
+7. Entering &quot;Clothes&quot;
+8. Choosing product - Hummingbird Printed Sweater
+9. Adding to cart
+10. Execution of buying
+11. Displaying items in cart and execution buying
+12. Checking personal information
+13. Typing adress, 
+14. Selecting delivery method 
+15. Selecting payment method
+16. Accepting terms 
+17. Confirmation of buying</steps>
+										<expected>Correct buying process
+
+Actual result: Correct buying process
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C23</id>
+				<title>Deleting from cart</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps>1. Cart with item
+2. Click on deleting item
+3. Information on page about empty cart</steps>
+										<expected>Empty cart
+
+Actual result: empty cart
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C24</id>
+				<title>Payment method - payment by check</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. The user is in the checkout panel
+2. Going through the personal data panel and adress
+3. The user is in the payment panel
+4. Choosing payment by check
+5. Accepting terms
+6. Confirmation of buying
+
+</steps>
+										<expected>Correct transfer to the order summary panel. Visible order details: payment method - check, order number, price, item.
+
+Actual result: Correct transfer to the order summary panel. Visible order details: payment method - check, order number, price, item.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C25</id>
+				<title>Payment method - payment by cash transfer</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps>1. The user is in the checkout panel
+2. Going through the personal data panel and adress
+3. The user is in the payment panel
+4. Choosing payment by cash transfer
+5. Accepting terms
+6. Confirmation of buying
+</steps>
+										<expected>Correct transfer to the order summary panel. Visible order details: payment method - cash e-transfer, order number, price, item.
+
+Actual result: Correct transfer to the order summary panel. Visible order details: payment method - cash e-transfer, order number, price, item.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C26</id>
+				<title>Payment method - payment by przelewy24.pl</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps>1. The user is in the checkout panel
+2. Going through the personal data panel and adress
+3. The user is in the payment panel
+4. Choosing payment by przelewy24.pl
+5. Accepting terms
+6. Confirmation of buying
+</steps>
+										<expected>Correct transfer to the order summary panel. Visible order details: payment method - przelewy24.pl, order number, price, item.
+
+Actual result: Correct transfer to the order summary panel. Visible order details: payment method - przelewy24.pl, order number, price, item.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C27</id>
+				<title>Delivery of item method - personal pickup</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. The user is in the checkout panel
+2. Going through the personal data panel and adress
+3. The user is in the delivery panel
+4. Choosing delivery method - personal pickup
+5. Choosing payment method
+6. Accepting terms
+7. Confirmation of buying</steps>
+										<expected>Correct transfer to the order summary panel. Visible order details: delivery method - personal pickup, payment method, order number, price, item.
+
+Actual result: Correct transfer to the order summary panel. Visible order details: delivery method - personal pickup, payment method, order number, price, item.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C28</id>
+				<title>Delivery of item method - my carrier</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. The user is in the checkout panel
+2. Going through the personal data panel and adress
+3. The user is in the delivery panel
+4. Choosing delivery method - my carrier
+5. Choosing payment method
+6. Accepting terms
+7. Confirmation of buying</steps>
+										<expected>Correct transfer to the order summary panel. Visible order details: delivery method - my carrier, payment method, order number, price, item.
+
+Actual result: Correct transfer to the order summary panel. Visible order details: delivery method - my carrier, payment method, order number, price, item.
+
+Status: passed</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C29</id>
+				<title>Edition of adress in implementation of buying</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit</preconds>
+										<steps>1. User in the checkout panel
+2. Going through the personal data panel
+3. Entering the address panel
+4. Clicking edit address
+5. Supplementing the company name, NIP, change of address, postal code, telephone number
+6. Clicking on edit confirmation
+7. Clicking &quot;next&quot;
+8. Going through the method of delivery and payment
+9. Acceptance of terms
+10. Confirmation
+
+</steps>
+										<expected>Correct writing of address data. 
+
+Actual result: Correct writing of address data. The address editing panel also includes the name and surname, which is more suitable for personal data - so it may be a defect. 
+
+Status: passed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C30</id>
+				<title>E-mail after buying process.</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Environment: Windows 7, 64 bit, Mozilla Firefox 81.0.2 64 bit / Google Chrome Wersja 86.0.4240.111 64 bit / Opera 72.0.3815.148 64 bit
+</preconds>
+										<steps>1. Entering the site
+2. Login of user
+3. Choosing &quot;Art&quot;
+4. Choosing product - Brown Bear - vector Graphics
+5. Adding to cart
+6. Execution of buying
+7. Displaying items in cart and execution buying
+8. Checking personal information
+9. Typing adress, 
+10. Selecting delivery method 
+11. Selecting payment method
+12. Accepting terms 
+13. Confirmation of buying
+14. Display information about sent e-mail.</steps>
+										<expected>There should be a confirmation e-mail in your e-mail box.
+
+Actual result: No e-mail from the webstore confirming the purchase.
+
+Status: failed.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
